@@ -1,0 +1,12 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: web-demo
+  namespace: default
+spec:
+  containers:
+  - name: web-demo-ctr
+    image: microsoft/dotnet-samples
+    ports:
+        - containerPort: 80
+
